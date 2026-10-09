@@ -1519,13 +1519,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   playerData:
-    playerName: jorge
-    coins: 1
-    level: 1
+    playerName: Carlsen
+    coins: 0
+    level: 15
   enemyData:
-    enemyName: 
-    health: 0
-    damage: 0
+    enemyName: Hikaru
+    health: 2000
+    damage: 65
+  playerSaveFileName: Player_Save
+  enemySaveFileName: Enemy_Save
 --- !u!4 &1915574755
 Transform:
   m_ObjectHideFlags: 0

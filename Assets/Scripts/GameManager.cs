@@ -13,13 +13,11 @@ public class GameManager : MonoBehaviour
     public void SavePlayerData()
     {
         SaveSystem.SaveData(playerData, playerSaveFileName);
-        SaveSystem.SaveData(enemyData, enemySaveFileName);
     }
 
     public void LoadPlayerData()
     {
         playerData = SaveSystem.LoadData<PlayerData>(playerSaveFileName);
-        enemyData = SaveSystem.LoadData<EnemyData>(enemySaveFileName);
     }
 
     public void ExistPlayerData() 
@@ -59,7 +57,7 @@ public class GameManager : MonoBehaviour
 [Serializable]
 public class EnemyData
 {
-    public string enemyName;
-    public int health;
-    public int damage;
+    public string enemyName = "Hikaru";
+    public int health = 2000;
+    public int damage = 65;
 }
